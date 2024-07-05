@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Slider;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,6 +19,14 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+        ]);
+
+        Slider::factory()->create([
+            'title' => 'test title',
+            'sub_title' => 'test sub title',
+            'description' => 'test description',
+            'bg_url' => 'test.png',
+            'link_url' => 'test.com',
         ]);
     }
 }
