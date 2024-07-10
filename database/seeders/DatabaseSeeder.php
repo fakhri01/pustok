@@ -43,6 +43,7 @@ class DatabaseSeeder extends Seeder
                 'price' => 199.99,
                 'img_url' => 'client/assets/image/products/product-1.jpg',
                 'stock' => 100,
+                'slug'=> 'beats-ep-wired-on-ear-headphone-black',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);

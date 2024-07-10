@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('price');
             $table->string('img_url');
             $table->integer('stock');
+            $table->string('slug');
             $table->timestamps();
         });
     }
