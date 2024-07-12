@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Product;
 use App\Models\Slider;
 use App\Models\User;
+use App\Models\SubImg;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -44,6 +45,15 @@ class DatabaseSeeder extends Seeder
                 'img_url' => 'client/assets/image/products/product-1.jpg',
                 'stock' => 100,
                 'slug'=> 'beats-ep-wired-on-ear-headphone-black',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+        }
+
+        if(!SubImg::exists()){
+            SubImg::factory()->create([
+                'product_id' => 1,
+                'img_url' => 'client/assets/image/products/product-2.jpg',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);

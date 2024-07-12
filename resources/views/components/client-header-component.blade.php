@@ -198,7 +198,7 @@
                             </li>
                             <!-- Shop -->
                             <li class="menu-item has-children mega-menu">
-                                <a href="./shop-list.html">shop</a>
+                                <a href="{{url('/shop')}}">shop</a>
 
                             </li>
 
